@@ -5,12 +5,40 @@
 	<title>Партнерка</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211224194723">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20211225201855">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/aa087ece08.js" crossorigin="anonymous"></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://cdn.tiny.cloud/1/ctd70fnfkk8k9puxv6k55jea383gx5gp4ttvnv8ae2p3rp11/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script>
+		tinymce.init({
+			selector: '#mytextarea',
+			language: 'ru',
+			height: 335,
+			statusbar: false,
+			menubar: false,
+			plugins: 'lists casechange',
+			toolbar: 'bold casechange italic subscript underline bullist numlist',
+		});
+	</script>
 </head>
 
 <body>
@@ -20,7 +48,7 @@
 				<div class="header__body">
 					<div class="header__logo logo">
 						<a href="/">
-							<img class="_lazy" data-src="img/logo.svg?_v=1640368043092" alt="logo">
+							<img class="_lazy" data-src="img/logo.svg?_v=1640456335837" alt="logo">
 						</a>
 					</div>
 					<nav class="header__menu menu">
@@ -31,13 +59,13 @@
 							<li class="menu__item">
 								<a href="javascript:" class="menu__link">Заработок</a>
 								<button type="button" data-spoller>
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640368043092" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640456335837" alt="arrow-down">
 								</button>
 							</li>
 							<li class="menu__item">
 								<a href="javascript:" class="menu__link">Партнёрки</a>
 								<button type="button" data-spoller>
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640368043092" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640456335837" alt="arrow-down">
 								</button>
 								<ul class="menu__list-sub">
 									<li class="menu__item-sub">
@@ -90,19 +118,19 @@
 							<li class="menu__item">
 								<a href="javascript:" class="menu__link">Сервисы</a>
 								<button type="button" data-spoller>
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640368043092" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640456335837" alt="arrow-down">
 								</button>
 							</li>
 							<li class="menu__item">
 								<a href="javascript:" class="menu__link">Интересное</a>
 								<button type="button" data-spoller>
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640368043092" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640456335837" alt="arrow-down">
 								</button>
 							</li>
 							<li class="menu__item">
 								<a href="javascript:" class="menu__link">О сервисе</a>
 								<button type="button" data-spoller>
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640368043092" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640456335837" alt="arrow-down">
 								</button>
 							</li>
 						</ul>
@@ -112,7 +140,7 @@
 							<input autocomplete="off" type="text" name="s" id="s" data-error="Введите поисковый запрос" placeholder="Поиск" class="input search__input">
 							<button type="submit" class="button"><i class="fas fa-search"></i></button>
 						</form>
-						<button type="button" data-popup="#popup__login" class="header__login">
+						<button type="button" data-popup="#popup_login" class="header__login">
 							<a href="javascript:">
 								<i class="far fa-user"></i>
 							</a>
@@ -153,7 +181,7 @@
 									<ul class="contacts__list">
 										<li class="contacts__list-item">
 											<a href="javascript:" class="contacts__list-item--img">
-												<img src="img/icons8-skype.svg?_v=1640368043092" alt="skype">
+												<img src="img/icons8-skype.svg?_v=1640456335837" alt="skype">
 											</a>
 											<div class="contacts__list-item--link">
 												<a href="javascript:">someskype</a>
@@ -161,7 +189,7 @@
 										</li>
 										<li class="contacts__list-item">
 											<a href="javascript:" class="contacts__list-item--img">
-												<img src="img/icons8-telegram-app.svg?_v=1640368043092" alt="telegram">
+												<img src="img/icons8-telegram-app.svg?_v=1640456335837" alt="telegram">
 											</a>
 											<div class="contacts__list-item--link">
 												<a href="javascript:">somename</a>
@@ -169,7 +197,7 @@
 										</li>
 										<li class="contacts__list-item">
 											<a href="tel:+71234567890" class="contacts__list-item--img">
-												<img src="img/icons8-whatsapp.svg?_v=1640368043092" alt="whatsapp">
+												<img src="img/icons8-whatsapp.svg?_v=1640456335837" alt="whatsapp">
 											</a>
 											<div class="contacts__list-item--link">
 												<a href="tel:+71234567890">+7 123 456 78 90</a>
@@ -177,7 +205,7 @@
 										</li>
 										<li class="contacts__list-item">
 											<a href="tel:+71234567890" class="contacts__list-item--img">
-												<img src="img/icons8-viber.svg?_v=1640368043092" alt="viber">
+												<img src="img/icons8-viber.svg?_v=1640456335837" alt="viber">
 											</a>
 											<div class="contacts__list-item--link">
 												<a href="tel:+71234567890">+7 123 456 78 90</a>
@@ -213,11 +241,9 @@
 											<textarea autocomplete="off" name="text" placeholder="" data-error="Ошибка" class="input form__textarea"></textarea>
 										</div>
 										<div class="contacts__form-inner">
-											<div id="html_element" class="form__captcha"></div>
+											<div id="html_element3" class="form__captcha"></div>
 											<button type="submit" class="form__button btn btn_yellow">Отправить</button>
 										</div>
-										<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-										</script>
 									</form>
 								</div>
 							</div>
@@ -254,7 +280,7 @@
 					<div class="footer__body">
 						<div class="footer__logo">
 							<a href="/">
-								<picture><source srcset="img/logo.webp" type="image/webp"><img class="_lazy" data-src="img/logo.png?_v=1640368043092" alt="logo"></picture>
+								<picture><source srcset="img/logo.webp" type="image/webp"><img class="_lazy" data-src="img/logo.png?_v=1640456335837" alt="logo"></picture>
 							</a>
 						</div>
 						<div class="footer__descr">
@@ -309,23 +335,72 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup__login" aria-hidden="true" class="popup">
+	<div id="popup_login" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">
 					<i class="fa-solid fa-xmark"></i>
 				</button>
-				<div data-tabs class="tabs">
+				<div data-tabs class="popup_login-tabs tabs">
 					<nav data-tabs-titles class="tabs__navigation">
 						<button type="submit" class="tabs__title _tab-active">Вход</button>
 						<button type="submit" class="tabs__title">Регистрация</button>
 					</nav>
 					<div data-tabs-body class="tabs__content">
-						<div class="tabs__body">
-							1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+						<div class="tabs__body _signin">
+							<form class="form form-captcha" action="#" method="post">
+								<div class="form__line">
+									<label for="name" class="form__label">Логин</label>
+									<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder="" class="form__input input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Пароль</label>
+									<input autocomplete="off" type="password" name="pw" data-error="Введите имя" placeholder="*********" class="form__input input">
+								</div>
+								<div id="html_element" class="form__captcha"></div>
+								<button type="submit" class="form__button btn btn_yellow">Войти</button>
+							</form>
+							<button data-popup="#popup_recovery" type="button" class="button form__forget">Забыли Ваш
+								пароль?</button>
 						</div>
-						<div class="tabs__body">
-							2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+						<div class="tabs__body _registration">
+							<form data-ajax="true" data-test method="post" action="#" class="profile__form form form-captcha">
+								<div class="form__line">
+									<label for="name" class="form__label">Имя</label>
+									<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder="" class="form__input input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Email</label>
+									<input data-required="email" data-validate autocomplete="off" type="text" name="email" data-error="Введите корректный email" placeholder="some@mail.com" class="form__input input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Пароль</label>
+									<input autocomplete="off" type="password" name="pw" data-error="Введите имя" placeholder="*********" class="form__input input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Повторите пароль</label>
+									<input autocomplete="off" type="password" name="pwre" data-error="Введите имя" placeholder="*********" class="form__input input">
+								</div>
+								<div class="options">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_1" class="options__label"><span class="options__text">Пользователь</span></label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label"><span class="options__text">Менеджер</span></label>
+									</div>
+								</div>
+								<div id="html_element2" class="form__captcha"></div>
+								<button type="submit" class="form__button btn btn_yellow">Регистрация</button>
+								<div class="checkbox">
+									<input data-required="checkbox" id="c_1" data-error="Дайте согласие" class="checkbox__input" type="checkbox" value="1" name="checkbox">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">
+											Нажимая на кнопку, в соглашаетесь с <a href="javascript:">политикой конфиденциальности</a>
+											и <a href="javascript:">правилами сайта</a>
+										</span></label>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -333,7 +408,65 @@
 		</div>
 	</div>
 
-	<div data-youtube="esX7SFtEjHg" id="popup__video" aria-hidden="true" class="popup">
+	<div id="popup_recovery" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="popup__title">Восстановить доступ</div>
+				<form class="form form-captcha" action="#" method="post">
+					<div class="form__line">
+						<label for="login" class="form__label">Email или логин</label>
+						<input autocomplete="off" type="text" name="login" data-error="Введите ваши данные" placeholder="" class="form__input input">
+					</div>
+					<div id="html_element4" class="form__captcha"></div>
+					<button type="submit" class="form__button btn btn_yellow">Восстановить доступ</button>
+				</form>
+				<div class="popup__inner">
+					<span>Вспомнили пароль?</span>
+					<button data-popup="#popup_login" type="button" class="button form__forget">Вход</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_review" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="popup__title">Добавить отзыв</div>
+				<form class="form" action="#" method="post">
+					<div class="form__line">
+						<label for="login" class="form__label">Поставить оценку</label>
+						<div class="rating rating_set">
+							<div class="rating__body">
+								<div class="rating__active"></div>
+								<div class="rating__items">
+									<input type="radio" class="rating__item" value="1" name="rating">
+									<input type="radio" class="rating__item" value="2" name="rating">
+									<input type="radio" class="rating__item" value="3" name="rating">
+									<input type="radio" class="rating__item" value="4" name="rating">
+									<input type="radio" class="rating__item" value="5" name="rating">
+								</div>
+							</div>
+							<div class="rating__value">5</div>
+						</div>
+					</div>
+					<div class="form__line">
+						<label for="login" class="form__label">Напишите отзыв</label>
+						<textarea id="mytextarea" name="mytextarea">
+					 </textarea>
+					</div>
+					<button type="submit" class="form__button btn btn_yellow">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div data-youtube="esX7SFtEjHg" id="popup_video" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">
@@ -343,13 +476,15 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20211224194723"></script>
+	<script src="js/app.min.js?_v=20211225201855"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+	</script>
 	<script>
 		document.querySelectorAll('.form-captcha').forEach(item => {
 			item.addEventListener('submit', (e) => {
 				if (grecaptcha.getResponse() == "") {
 					e.preventDefault();
-					document.querySelector('#html_element').style.border = "1px solid red";
+					e.target.querySelector('[id*="html_element"]').style.border = "1px solid red";
 				}
 			});
 		});
@@ -357,6 +492,20 @@
 	<script type="text/javascript">
 		var onloadCallback = function() {
 			grecaptcha.render('html_element', {
+				'sitekey': 'xxxxxxxxxxxxxxxxxx'
+			});
+
+			grecaptcha.render('html_element2', {
+				'sitekey': 'xxxxxxxxxxxxxxxxxx'
+			});
+
+			if (document.getElementById('html_element3')) {
+				grecaptcha.render('html_element3', {
+					'sitekey': 'xxxxxxxxxxxxxxxxxx'
+				});
+			}
+
+			grecaptcha.render('html_element4', {
 				'sitekey': 'xxxxxxxxxxxxxxxxxx'
 			});
 		};
