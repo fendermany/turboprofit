@@ -7971,9 +7971,7 @@ body.popup-show::after {
 #popup_recovery .form__button:focus,
 #popup_review .form__button:hover,
 #popup_review .form__button:focus {
-  box-shadow: inset 300px 0 0 0 #fff;
-  border: 1px solid #bd9423;
-  color: #bd9423;
+  box-shadow: inset 300px 0 0 0 #ffda76;
 }
 #popup_login .form .options,
 #popup_recovery .form .options,
@@ -8912,7 +8910,6 @@ body.popup-show::after {
   align-content: space-between;
   justify-content: space-between;
   width: 100%;
-  max-width: 375px;
   height: 308px;
   box-shadow: 0 5px 14px rgba(62, 65, 68, 0.09);
   border-radius: 20px;
@@ -9053,6 +9050,9 @@ body.popup-show::after {
     margin-bottom: 0;
   }
 }
+.list._services .list__body {
+  margin-top: 0;
+}
 .list._services .list__item {
   min-height: 192px;
   height: auto;
@@ -9064,6 +9064,11 @@ body.popup-show::after {
 .list._services .list__item > * {
   justify-self: center;
   align-self: center;
+}
+@media (min-width: 84.375em) {
+  .list._services .list__item > * {
+    align-self: flex-start;
+  }
 }
 .list._services .list__item:before {
   top: 30px;
@@ -11776,9 +11781,7 @@ body.popup-show::after {
   cursor: pointer;
 }
 .contacts__form-inner button:hover, .contacts__form-inner button:focus {
-  box-shadow: inset 300px 0 0 0 #fff;
-  border: 1px solid #bd9423;
-  color: #bd9423;
+  box-shadow: inset 300px 0 0 0 #ffda76;
 }
 
 .page {
