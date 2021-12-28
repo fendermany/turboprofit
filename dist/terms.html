@@ -5,7 +5,7 @@
 	<title>Пользовательское соглашение</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211226211830">
+	<link rel="stylesheet" href="css/style.min.css?_v=20211229001149">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -29,14 +29,14 @@
 	<script src="https://cdn.tiny.cloud/1/ctd70fnfkk8k9puxv6k55jea383gx5gp4ttvnv8ae2p3rp11/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
 					<div class="header__logo logo">
 						<a href="/">
-							<img class="_lazy" data-src="img/logo.svg?_v=1640546310301" alt="logo">
+							<img class="_lazy" data-src="img/logo.svg?_v=1640729509786" alt="logo">
 						</a>
 					</div>
 					<nav class="header__menu menu">
@@ -47,13 +47,13 @@
 							<li class="menu__item">
 
 								<a href="javascript:" class="menu__link">Заработок
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640546310301" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640729509786" alt="arrow-down">
 								</a>
 							</li>
 							<li class="menu__item">
 
 								<a href="javascript:" data-spoller class="menu__link">Партнёрки
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640546310301" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640729509786" alt="arrow-down">
 								</a>
 								<ul class="menu__list-sub">
 									<li class="menu__item-sub">
@@ -106,28 +106,31 @@
 							<li class="menu__item">
 
 								<a href="javascript:" class="menu__link">Сервисы
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640546310301" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640729509786" alt="arrow-down">
 								</a>
 							</li>
 							<li class="menu__item">
 
 								<a href="javascript:" class="menu__link">Интересное
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640546310301" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640729509786" alt="arrow-down">
 								</a>
 							</li>
 							<li class="menu__item">
 
 								<a href="javascript:" class="menu__link">О сервисе
-									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640546310301" alt="arrow-down">
+									<img class="menu__arrow _lazy" data-src="img/chevron-down-solid.svg?_v=1640729509786" alt="arrow-down">
 								</a>
 							</li>
 						</ul>
 					</nav>
 					<div class="header__icons">
-						<form class="header__search search" method="get" action="s">
-							<input autocomplete="off" type="text" name="s" id="s" data-error="Введите поисковый запрос" placeholder="Поиск" class="input search__input">
-							<button type="submit" class="button"><i class="fas fa-search"></i></button>
-						</form>
+						<div class="header__search search">
+							<form class="search__form" action="">
+								<input required minlength="1" autocomplete="off" type="text" name="search" id="search" data-error="Введите поисковый запрос" placeholder="Поиск" class="input search__input">
+								<button type="submit" class="button"><i class="fas fa-search"></i></button>
+							</form>
+							<div class="search__results-box"></div>
+						</div>
 						<button type="button" data-popup="#popup_login" class="header__login">
 							<a href="javascript:">
 								<i class="far fa-user"></i>
@@ -146,15 +149,27 @@
 				</div>
 			</div>
 		</header>
-		<main class="page bg _one-column">
+		<main itemprop="mainContentOfPage" class="page bg _one-column">
 			<div class="page__container">
 				<div class="breadcrumbs">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item">
-							<a href="javascript:" class="breadcrumbs__link">Home</a>
+					<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs__list">
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+							<a itemprop="item" href="javascript:" class="breadcrumbs__link">
+								<span itemprop="name">Home</span>
+							</a>
+							<meta itemprop="position" content="1">
 						</li>
-						<li class="breadcrumbs__item">
-							Пользовательское соглашение
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+							<a itemprop="item" href="javascript:" class="breadcrumbs__link">
+								<span itemprop="name">Хлебная крошка</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+							<a itemprop="item" href="javascript:" class="breadcrumbs__link">
+								<span itemprop="name">Последняя крошка</span>
+							</a>
+							<meta itemprop="position" content="3">
 						</li>
 					</ul>
 				</div>
@@ -397,7 +412,7 @@
 					<div class="footer__body">
 						<div class="footer__logo">
 							<a href="/">
-								<picture><source srcset="img/logo.webp" type="image/webp"><img class="_lazy" data-src="img/logo.png?_v=1640546310301" alt="logo"></picture>
+								<picture><source srcset="img/logo.webp" type="image/webp"><img class="_lazy" data-src="img/logo.png?_v=1640729509786" alt="logo"></picture>
 							</a>
 						</div>
 						<div class="footer__descr">
@@ -451,6 +466,13 @@
 				</div>
 			</div>
 		</footer>
+		<!-- back to top start -->
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<!-- back to top end -->
 	</div>
 	<div id="popup_login" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -549,8 +571,6 @@
 		</div>
 	</div>
 
-
-
 	<div data-youtube id="popup_video" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -561,7 +581,17 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20211226211830"></script>
+
+	<div class="popup_cookie">
+		<div class="popup__container">
+			<div class="popup__body">
+				<div class="popup_cookie-title">Сайт использует cookie, для более удобного и комфортного пребывания на нем.
+				</div>
+				<button data-confirm type="button" class="popup_cookie-btn btn btn_yellow">Принять</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20211229001149"></script>
 	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
 	</script>
 	<script>
