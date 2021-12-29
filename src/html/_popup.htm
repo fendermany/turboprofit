@@ -1,0 +1,126 @@
+<div id="popup_login" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+			<div data-tabs class="popup_login-tabs tabs">
+				<nav data-tabs-titles class="tabs__navigation">
+					<button type="submit" class="tabs__title _tab-active">Вход</button>
+					<button type="submit" class="tabs__title">Регистрация</button>
+				</nav>
+				<div data-tabs-body class="tabs__content">
+					<div class="tabs__body _signin">
+						<form class="form form-captcha" action="#" data-ajax="true" data-test method="post">
+							<div class="form__line">
+								<label for="name" class="form__label">Логин</label>
+								<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder=""
+									class="form__input input">
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Пароль</label>
+								<input autocomplete="off" type="password" name="pw" data-error="Введите имя"
+									placeholder="*********" class="form__input input">
+							</div>
+							<div id="html_element" class="form__captcha"></div>
+							<button type="submit" class="form__button btn">Войти</button>
+						</form>
+						<button data-popup="#popup_recovery" type="button" class="button form__forget">
+							Забыли Ваш&nbsp;<span>пароль</span>?
+						</button>
+					</div>
+					<div class="tabs__body _registration">
+						<form data-ajax="true" data-test method="post" action="#" class="profile__form form form-captcha">
+							<div class="form__line">
+								<label for="name" class="form__label">Имя</label>
+								<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder=""
+									class="form__input input">
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Email</label>
+								<input data-required="email" data-validate autocomplete="off" type="text" name="email"
+									data-error="Введите корректный email" placeholder="some@mail.com" class="form__input input">
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Пароль</label>
+								<input autocomplete="off" type="password" name="pw" data-error="Введите имя"
+									placeholder="*********" class="form__input input">
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Повторите пароль</label>
+								<input autocomplete="off" type="password" name="pwre" data-error="Введите имя"
+									placeholder="*********" class="form__input input">
+							</div>
+							<div class="options">
+								<div class="options__item">
+									<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">Менеджер</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+									<label for="o_2" class="options__label"><span
+											class="options__text">Пользователь</span></label>
+								</div>
+							</div>
+							<div id="html_element2" class="form__captcha"></div>
+							<div class="checkbox">
+								<input data-required="checkbox" id="c_1" data-error="Дайте согласие" class="checkbox__input"
+									type="checkbox" value="1" name="checkbox">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">
+										Нажимая на кнопку, в соглашаетесь с <a href="javascript:">политикой конфиденциальности</a>
+										и <a href="javascript:">правилами сайта</a>
+									</span></label>
+							</div>
+							<button type="submit" class="form__button btn">Регистрация</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup_recovery" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+			<div class="popup__title">Восстановить доступ</div>
+			<form class="form form-captcha" action="#" data-ajax="true" data-test method="post">
+				<div class="form__line">
+					<label for="login" class="form__label">Email или логин</label>
+					<input autocomplete="off" type="text" name="login" data-error="Введите ваши данные" placeholder=""
+						class="form__input input">
+				</div>
+				<div id="html_element4" class="form__captcha"></div>
+				<button type="submit" class="form__button btn">Восстановить доступ</button>
+			</form>
+			<div class="popup__inner">
+				<span>Вспомнили пароль?</span>
+				<button data-popup="#popup_login" type="button" class="button form__forget">Вход</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div data-youtube id="popup_video" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+			<div class="popup__video"></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup_cookie">
+	<div class="popup__container">
+		<div class="popup__body">
+			<div class="popup_cookie-title">Сайт использует cookie, для более удобного и комфортного пребывания на нем.
+			</div>
+			<button data-confirm type="button" class="popup_cookie-btn btn btn_yellow">Принять</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Профиль"
+})
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page bg">
+			<div class="page__container">
+				@@include('html/_breadcrumbs.htm',{})
+				<h1 class="page__title title title_h1">
+					Профиль
+				</h1>
+				<div class="page__wrapper">
+					<aside class="page__aside aside">
+						<div class="aside__wrapper">
+							<nav data-da=".page__body,768,first" class="aside__menu _profle">
+								<ul class="aside__menu-list">
+									<li class="aside__menu-item _active">
+										<a href="javascript:" class="aside__menu-link">Профиль</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Редактировать профиль</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Избранное</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Мои отзывы</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">
+											<i class="fas fa-sign-out-alt"></i>
+											<span>Выход</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</aside>
+					<div class="page__body">
+						<section class="profile">
+							<div class="profile__wrapper">
+								<div class="profile__body">
+									<div class="profile__img">
+										<img class="_lazy"  data-src="@img/avatar.png" alt="avatar">
+									</div>
+									<div class="profile__inner">
+										<div class="profile__name">Валентин</div>
+										<div class="profile__role">Пользователь</div>
+										<button type="button" class="profile__edit">
+											<i class="fas fa-pen"></i>
+											<span>Редактировать профиль</span>
+										</button>
+									</div>
+								</div>
+								<div class="profile__favorites">
+									<div class="profile__favorites-title">В избранном</div>
+									<ul class="profile__favorites-list">
+										<li class="profile__favorites-item">
+											<div class="profile__favorites-number">28</div>
+											<div class="profile__favorites-subject">партнёрок</div>
+										</li>
+										<li class="profile__favorites-item">
+											<div class="profile__favorites-number">78</div>
+											<div class="profile__favorites-subject">сервисов</div>
+										</li>
+										<li class="profile__favorites-item">
+											<div class="profile__favorites-number">5</div>
+											<div class="profile__favorites-subject">заработков</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="profile__reviews">
+								<div class="profile__reviews-inner">
+									<div class="profile__rivews-title">Мои последние отзывы</div>
+									<a href="javascript:" class="profile__rivews-btn btn btn_arrow">
+										Смотреть все
+										<i class="fas fa-long-arrow-alt-right"></i>
+									</a>
+								</div>
+								<div class="b-reviews__body">
+									<ul class="b-reviews__slider __swiper">
+										<li class="b-reviews__item">
+											<a href="javascript:" class="b-reviews__item-author">
+												<img class="_lazy" data-src="@img/postmypost.png" alt="partner">
+											</a>
+											<a href="javascript:" class="b-reviews__item-name">
+												PMaffiliates
+											</a>
+											<div class="b-reviews__item-date">
+												<span class="b-reviews__item-date--day">
+													30.11.2020
+												</span> в
+												<span class="b-reviews__item-date--time">
+													00:42
+												</span>
+											</div>
+											<div class="b-reviews__item-text">
+												Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с
+												партнерок, которая принимают игроков из России и стран СНГ. Также здесь одни из
+												самых
+												высоких отчислений и постоянные конкурсы, которые приносят дополнительный профит.
+											</div>
+										</li>
+										<li class="b-reviews__item">
+											<a href="javascript:" class="b-reviews__item-author">
+												<img class="_lazy" data-src="@img/monsterru.png" alt="partner">
+											</a>
+											<a href="javascript:" class="b-reviews__item-name">
+												PMaffiliates
+											</a>
+											<div class="b-reviews__item-date">
+												<span class="b-reviews__item-date--day">
+													30.11.2020
+												</span> в
+												<span class="b-reviews__item-date--time">
+													00:42
+												</span>
+											</div>
+											<div class="b-reviews__item-text">
+												Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с
+												партнерок, которая принимают игроков из России и стран СНГ. Также здесь одни из
+												самых
+												высоких отчислений и постоянные конкурсы, которые приносят дополнительный профит.
+											</div>
+										</li>
+										<li class="b-reviews__item">
+											<a href="javascript:" class="b-reviews__item-author">
+												<img class="_lazy" data-src="@img/vavada.png" alt="partner">
+											</a>
+											<a href="javascript:" class="b-reviews__item-name">
+												PMaffiliates
+											</a>
+											<div class="b-reviews__item-date">
+												<span class="b-reviews__item-date--day">
+													30.11.2020
+												</span> в
+												<span class="b-reviews__item-date--time">
+													00:42
+												</span>
+											</div>
+											<div class="b-reviews__item-text">
+												Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с
+												партнерок, которая принимают игроков из России и стран СНГ. Также здесь одни из
+												самых
+												высоких отчислений и постоянные конкурсы, которые приносят дополнительный профит.
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

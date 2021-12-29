@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Партнерка"
+})
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page bg _one-column">
+			<div class="page__container">
+				@@include('html/_breadcrumbs.htm',{})
+				<h1 class="page__title title title_h1">
+					Контакты
+				</h1>
+				<div class="page__wrapper">
+					<div class="page__body">
+						<section class="page__contacts contacts">
+							<div class="contacts__wrapper">
+								<div class="contacts__body">
+									<ul class="contacts__list">
+										<li class="contacts__list-item">
+											<a href="javascript:" class="contacts__list-item--img">
+												<img class="_lazy"  data-src="@img/icons8-skype.svg" alt="skype">
+											</a>
+											<div class="contacts__list-item--link">
+												<a href="javascript:">someskype</a>
+											</div>
+										</li>
+										<li class="contacts__list-item">
+											<a href="javascript:" class="contacts__list-item--img">
+												<img class="_lazy"  data-src="@img/icons8-telegram-app.svg" alt="telegram">
+											</a>
+											<div class="contacts__list-item--link">
+												<a href="javascript:">somename</a>
+											</div>
+										</li>
+										<li class="contacts__list-item">
+											<a href="tel:+71234567890" class="contacts__list-item--img">
+												<img class="_lazy"  data-src="@img/icons8-whatsapp.svg" alt="whatsapp">
+											</a>
+											<div class="contacts__list-item--link">
+												<a href="tel:+71234567890">+7 123 456 78 90</a>
+											</div>
+										</li>
+										<li class="contacts__list-item">
+											<a href="tel:+71234567890" class="contacts__list-item--img">
+												<img class="_lazy"  data-src="@img/icons8-viber.svg" alt="viber">
+											</a>
+											<div class="contacts__list-item--link">
+												<a href="tel:+71234567890">+7 123 456 78 90</a>
+											</div>
+										</li>
+									</ul>
+									<div class="contacts__content content">
+										<p>
+											По вопросам касающимся сотрудничества, а также любым другим вопросам, Вы можете
+											обратиться
+											к нам отправив письмо на e-mail <a href="mailto:some@mail.com">some@mail.com</a> или же
+											с помощью формы обратной связи и
+											мы
+											свяжемся с Вами в самое ближайшее время.
+										</p>
+										<p>
+											Прайс на рекламу высылаем по запросу.
+										</p>
+									</div>
+								</div>
+								<div class="contacts__form">
+									<form data-ajax="true" data-test method="post" action="#"
+									class="form form-captcha">
+									<div class="form__line">
+										<label for="name" class="form__label">Имя</label>
+										<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder=""
+											class="form__input input">
+									</div>
+									<div class="form__line">
+										<label for="email" class="form__label">Email</label>
+										<input data-required="email" data-validate autocomplete="off" type="text" name="email"
+											data-error="Введите корректный email" placeholder="some@mail.com"
+											class="form__input input">
+									</div>
+									<div class="form__line">
+										<label for="text" class="form__label">Сообщение</label>
+										<textarea autocomplete="off" name="text" placeholder="" data-error="Ошибка"
+											class="input form__textarea"></textarea>
+									</div>
+									<div class="contacts__form-inner">
+										<div id="html_element3" class="form__captcha"></div>
+										<button type="submit" class="form__button btn">Отправить</button>
+									</div>
+								</form>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+
+	
+</body>
+
+</html>

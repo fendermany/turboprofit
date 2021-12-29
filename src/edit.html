@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Редактировать профиль"
+})
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page bg">
+			<div class="page__container">
+				@@include('html/_breadcrumbs.htm',{})
+				<h1 class="page__title title title_h1">
+					Профиль
+				</h1>
+				<div class="page__wrapper">
+					<aside class="page__aside aside">
+						<div class="aside__wrapper">
+							<nav data-da=".page__body,768,first" class="aside__menu _profle">
+								<ul class="aside__menu-list">
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Профиль</a>
+									</li>
+									<li class="aside__menu-item _active">
+										<a href="javascript:" class="aside__menu-link">Редактировать профиль</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Избранное</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">Мои отзывы</a>
+									</li>
+									<li class="aside__menu-item">
+										<a href="javascript:" class="aside__menu-link">
+											<i class="fas fa-sign-out-alt"></i>
+											<span>Выход</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</aside>
+					<div class="page__body">
+						<section class="profile _edit">
+							<div class="profile__wrapper">
+								<h2 class="profile__title">Личные данные</h2>
+								<div class="profile__body">
+									<div class="profile__img">
+										<img class="_lazy"  data-src="@img/avatar.png" alt="avatar">
+									</div>
+									<div class="profile__btns">
+										<button type="button" class="profile__btn btn">
+											Загрузить фото
+										</button>
+										<button type="button" class="profile__btn btn">
+											Удалить фото
+										</button>
+									</div>
+								</div>
+								<form data-ajax="true" data-test method="post" action="#" class="profile__form form">
+									<div class="form__line">
+										<label for="name" class="form__label">Имя</label>
+										<input autocomplete="off" type="text" name="name" data-error="Введите имя" placeholder="" class="form__input input">
+									</div>
+									<div class="form__line">
+										<label for="email" class="form__label">Email</label>
+										<input data-required="email" data-validate autocomplete="off" type="text" name="email" data-error="Введите корректный email" placeholder="some@mail.com" class="form__input input">
+									</div>
+									<div class="form__line">
+										<label for="email" class="form__label">Пароль</label>
+										<input autocomplete="off" type="password" name="pw" data-error="Введите имя" placeholder="*********" class="form__input input">
+									</div>
+									<div class="form__line">
+										<label for="email" class="form__label">Повторите пароль</label>
+										<input autocomplete="off" type="password" name="pwre" data-error="Введите имя" placeholder="*********" class="form__input input">
+									</div>
+									<button type="submit" class="form__button btn btn_yellow">Сохранить</button>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
