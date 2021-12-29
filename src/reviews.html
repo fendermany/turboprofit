@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Отзывы"
+})
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page bg _a-wide">
+			<div class="page__container">
+				@@include('html/_breadcrumbs.htm',{})
+				<h1 class="page__title title title_h1">
+					Alpha
+				</h1>
+				<div class="page__wrapper">
+					<aside class="page__aside aside">
+						<div class="aside__wrapper">
+							<div data-da=".page__body,768,first" class="aside__wrapper-inner">
+								<div class="aside__profile a-profile">
+									<div class="list__item-wrapper">
+										<div class="list__item-img">
+											<img class="_lazy" data-src="@img/Layer_1.png" alt="partner">
+										</div>
+										<div class="list__item-inner">
+											<div class="list__item-type">
+												Гемблинг</div>
+											<div class="list__item-name">
+												Alpha
+											</div>
+										</div>
+									</div>
+									<div class="list__item-rating">
+										<i class="far fa-star"></i>
+										<div class="list__item-rating--value">
+											5.0
+										</div>
+									</div>
+									<div class="list__item-counter">
+										<ul class="list__item-counter--list">
+											<li class="list__item-counter--positive">8</li>
+											<li class="list__item-counter--neutral">1</li>
+											<li class="list__item-counter--negative">3</li>
+										</ul>
+										<div class="list__item-counter--reviews">
+											всего <span>12</span> отзывов
+										</div>
+									</div>
+									<div class="list__item-btns">
+										<a href="javascript:" class="list__item-btn btn btn_arrow">
+											<span>На официальный сайт</span>
+											<i class="fas fa-long-arrow-alt-right"></i>
+										</a>
+									</div>
+								</div>
+								<button type="button" data-popup="#popup_review" class="aside__btn btn btn_yellow">
+									Оставить отзыв
+								</button>
+							</div>
+							<div class="aside__cases a-cases">
+								<h3 class="a-cases__title">Популярные кейсы</h3>
+								<div class="a-cases__list">
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy"  data-src="@img/ac1.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Погодный таргетинг: как увеличить конверсию на 235%
+										</h4>
+									</a>
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy"  data-src="@img/ac2.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Погодный таргетинг: как увеличить конверсию на 235%
+										</h4>
+									</a>
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy"  data-src="@img/ac3.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Кейс +245К на похудалке в FB
+										</h4>
+									</a>
+								</div>
+								<a href="javascript:" class="a-cases__btn btn btn_arrow">
+									Смотреть все
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</a>
+							</div>
+							<div class="aside__partners a-partners">
+								<h3 class="a-partners__title">Популярные партнёрки</h3>
+								<div class="a-partners__list">
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy"  data-src="@img/betmaster.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Betmaster Partners
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy"  data-src="@img/alpha.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Alpha
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy"  data-src="@img/vavada.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Vavada
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy"  data-src="@img/alpha.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Alpha
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy"  data-src="@img/neogara.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Neogara
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+								</div>
+								<a href="javascript:" class="a-partners__btn btn btn_arrow">
+									Смотреть все
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</a>
+							</div>
+						</div>
+					</aside>
+					<div class="page__body">
+						<div class="page__reviews reviews">
+							<div class="reviews__header">
+								<div class="reviews__header-title">Отзыв администрации</div>
+								<div class="reviews__header-rating">
+									4
+								</div>
+								<div class="reviews__header-content">
+									<p>
+										В 1win Partners есть все необходимые условия для монетизации вашего гемблинг и
+										беттинг-трафика. Персонализированный подход к каждому вебмастеру, индивидуальные ставки,
+										готовые приложения и промо-материалы для слива трафика, эффективная система удержания
+										игроков, собственная школа арбитража — это далеко не весь инструментарий, доступный для
+										партнеров. С 1win Partners вебмастера не просто зарабатывают, а получают уникальные бонусы
+										и
+										плюшки, любые консультации по заливу и всестороннюю помощь. 
+									</p>
+									<p>
+										Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с партнерок,
+										которая принимают игроков из России и стран СНГ. Также здесь одни из самых высоких
+										отчислений
+										и постоянные конкурсы, которые приносят дополнительный профит.
+									</p>
+								</div>
+							</div>
+							<ul class="reviews__list">
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev1.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Валентин
+									</div>
+									<div class="reviews__list-item--content">
+										Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с партнерок,
+										которая принимают игроков из России и стран СНГ. Также здесь одни из самых высоких
+										отчислений и постоянные конкурсы, которые приносят дополнительный профит.
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">5</div>
+								</li>
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev2.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Александра
+									</div>
+									<div class="reviews__list-item--content">
+										Почитал отзывы, они смешанные поэтому и я оставлю свой фидбек. К саппорту действительно
+										иногда возникают вопросы, например про метку вовремя не сообщили, по рассшарке долго
+										делают или просто долго отвечают. На моей памяти это было раз 7-8. В остальных случаях все
+										более менее нормально. По ставкам – кликлид платит хорошо, если качество гуд – то бамп
+										делают. Технические решения тоже на высоте. Поэтому если выбирать сторону, то партнерка
+										скорее хорошая, чем не очень
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">5</div>
+								</li>
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev3.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Егор
+									</div>
+									<div class="reviews__list-item--content">
+										Отзыв пешу исключительно из за того, что попросил менеджер) С кликлид работаю уже год.
+										Спасибо ребятам, что помогли преодалеть шторм фейсбука и подкидывали подходы. Так, когда
+										была проблема с бмами, Алекс подсказал лить с авторегов. Прилки хорошие, метку получают
+										редко – при желании можно свой ленд загрузить. Ставки выше чем по рынку, ну и плюс выводят
+										в удобной валюте. Удобно
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">1</div>
+								</li>
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev1.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Валентин
+									</div>
+									<div class="reviews__list-item--content">
+										Работаю с партнеркой КлеверАфф уже более 3-х лет. На данный момент это лучшая с партнерок,
+										которая принимают игроков из России и стран СНГ. Также здесь одни из самых высоких
+										отчислений и постоянные конкурсы, которые приносят дополнительный профит.
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">2</div>
+								</li>
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev2.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Александра
+									</div>
+									<div class="reviews__list-item--content">
+										Почитал отзывы, они смешанные поэтому и я оставлю свой фидбек. К саппорту действительно
+										иногда возникают вопросы, например про метку вовремя не сообщили, по рассшарке долго
+										делают или просто долго отвечают. На моей памяти это было раз 7-8. В остальных случаях все
+										более менее нормально. По ставкам – кликлид платит хорошо, если качество гуд – то бамп
+										делают. Технические решения тоже на высоте. Поэтому если выбирать сторону, то партнерка
+										скорее хорошая, чем не очень
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">4</div>
+								</li>
+								<li class="reviews__list-item">
+									<div class="reviews__list-item--img">
+										<img class="_lazy"  data-src="@img/rev3.png" alt="reviews">
+									</div>
+									<div class="reviews__list-item--name">
+										Егор
+									</div>
+									<div class="reviews__list-item--content">
+										Отзыв пешу исключительно из за того, что попросил менеджер) С кликлид работаю уже год.
+										Спасибо ребятам, что помогли преодалеть шторм фейсбука и подкидывали подходы. Так, когда
+										была проблема с бмами, Алекс подсказал лить с авторегов. Прилки хорошие, метку получают
+										редко – при желании можно свой ленд загрузить. Ставки выше чем по рынку, ну и плюс выводят
+										в удобной валюте. Удобно
+									</div>
+									<div class="reviews__list-item--date">
+										<span>30.11.2020</span> в <span>00:42</span>
+									</div>
+									<div class="reviews__list-item--like">
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-up"></i>
+											<span>156</span>
+										</a>
+										<a href="javascript:">
+											<i class="fa-solid fa-thumbs-down"></i>
+											<span>3</span>
+										</a>
+									</div>
+									<div class="reviews__list-item--rating">3</div>
+								</li>
+							</ul>
+						</div>
+						@@include('html/_pagging.htm',{})
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	<div id="popup_review" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="popup__title">Добавить отзыв</div>
+				<form class="form" action="#" method="post">
+					<div class="form__line">
+						<label for="login" class="form__label">Поставить оценку</label>
+						<div class="rating rating_set">
+							<div class="rating__body">
+								<div class="rating__active"></div>
+								<div class="rating__items">
+									<input type="radio" class="rating__item" value="1" name="rating">
+									<input type="radio" class="rating__item" value="2" name="rating">
+									<input type="radio" class="rating__item" value="3" name="rating">
+									<input type="radio" class="rating__item" value="4" name="rating">
+									<input type="radio" class="rating__item" value="5" name="rating">
+								</div>
+							</div>
+							<div class="rating__value">5</div>
+						</div>
+					</div>
+					<div class="form__line">
+						<label for="login" class="form__label">Напишите отзыв</label>
+						<textarea id="mytextarea" name="mytextarea">
+						 </textarea>
+						 @@include('html/_tinymce.htm',{})
+					</div>
+					<button type="submit" class="form__button btn">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

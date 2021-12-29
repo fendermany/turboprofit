@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Новость"
+})
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": 'WebPage',
+			"@id": '<?php echo get_permalink(); ?>'
+		},
+		"url": "<?php echo get_permalink(); ?>",
+		"headline": '<?php the_title(); ?>',
+		"name": "<?php the_title(); ?>",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"bestRating": "5",
+			"ratingCount": "<?php echo wp_rand(1.5, 9.9); ?>",
+			"ratingValue": "<?php echo wp_rand(4, 5); ?>"
+		},
+		"review": {
+			"@type": "Review",
+			"name": "<?php the_title(); ?>",
+			"author": {
+				"@type": 'Person',
+				"name": '<?php the_author(); ?>'
+			}
+		},
+		"image": {
+			"@type": 'ImageObject',
+			"url": '<?php the_post_thumbnail_url('large'); ?>'
+		},
+		"description": "<?php custom_excerpt(); ?>",
+		"sku": "<?php the_ID(); ?>",
+		"slogan": "Гемблинг партнерки",
+		"publisher": {
+			"@type": 'Organization',
+			"name": 'TurboProfit',
+			"logo": {
+				"@type": 'ImageObject',
+				"url": '@img/logo.svg'
+			}
+		},
+		"brand": "TurboProfit",
+		"datePublished": '<?php the_date(); ?>',
+		"dateModified": '<?php the_modified_date(); ?>'
+	}
+</script>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page bg _a-right _single">
+			<div class="page__container">
+				<div class="page__wrapper">
+					<div class="page__body" itemscope itemtype="https://schema.org/Article">
+						@@include('html/_breadcrumbs.htm',{})
+						<h1 class="page__title title" itemprop="name">
+							Нет представительства — нет денег: Минцифры планируют перекрывать платежи иностранным IT-компаниям
+						</h1>
+						<section class="cases">
+							<div class="cases__body">
+								<div class="cases__item case">
+									<div class="case__img">
+										<img class="_lazy" data-src="@img/article.png" alt="article" itemprop="image">
+									</div>
+									<div class="case__content content _single" itemprop="description">
+										<div class="case__content-descr">
+											Министерство цифрового развития опубликовало проект постановления, дополняющий ранее
+											подписанный закон о «приземлении» иностранных IT-компаний в России.
+										</div>
+										<p>
+											Теперь за отказ открывать полноценное представительство в РФ до 1 января 2022 года
+											IT-компаниям грозят санкции, одна из которых — ограничение платежей и переводов в их
+											сторону. Это может ограничить покупку рекламы в Facebook, Google, TikTok и на других
+											площадках.
+										</p>
+										<h3>
+											Списки нарушителей
+										</h3>
+										<ul>
+											<li>Популярные бренды: BetMaster — БК и казино, Casinoin и Bongo.gg — онлайн казино;
+											</li>
+											<li>Обширное ГЕО;</li>
+											<li>Сотрудничество по моделям Revshare, СРА и Hybrid;</li>
+											<li>Отчисления до 60%;</li>
+											<li>Индивидуальный подход к каждому клиенту;</li>
+											<li>Огромный ассортимент промо-материалов;</li>
+											<li>Возможность заказа персональных промо;</li>
+										</ul>
+										<h3>Модели сотрудничества</h3>
+										<p>На данный момент сотрудничество с офферами партнерской программы Betmaster Partners
+											доступно по 3-м моделям: RevenueShare и СРА.</p>
+										<ul>
+											<li>RevenueShare — сотрудничество по данной модели доступно сразу же после регистрации
+												в ПП. Отчисления по данной модели составляют от 30% до 60% и зависят от количества
+												привлеченных Вами перводеперов за предыдущий отчетный период. Также при наличии
+												хорошего трафика возможны постоянные высокие отчисления.</li>
+											<li>СРА — сотрудничество по данной модели оговаривается со своим персональным
+												менеджером в индивидуальном порядке. Единоразовая выплата за каждого активного
+												игрока будет завесить от качества вашего трафика и активности игроков.</li>
+											<li>Hybrid — представляет собой RevShare + СРА. За каждого активного игрока Вы будете
+												получать единоразовую выплату, а также некоторый процент от заработка казино с
+												данного игрока. Как и по СРА, сотрудничество по модели Hybrid оговаривается в
+												индивидуальном порядке, а отчисления будут зависеть от качества Вашего трафа.</li>
+										</ul>
+										<h4>Зачем это делается?</h4>
+										<p>Как считает управляющий партнер AVG Legal Алексей Гавришев, авторы закона хотят
+											«сократить факты ухода от налогов» и «пополнить казну»:</p>
+										<em>
+											<p>
+												Складывается четкое ощущение, что выдаваемые законопроекты могут быть губительны для
+												российского бизнеса, особенно малого. Такие компании продвигают свои продукты как
+												раз
+												через рекламу на ресурсах иностранных IТ-гигантов.
+											</p>
+											<p>
+												Очевидно, что законодатель, принимая такие решения, исходит из надежды на сокращение
+												фактов ухода от налогов компаний и своей целью ставит пополнение казны, однако
+												применение этих мер может вызвать непредсказуемые последствия. Это усложнит
+												процедуру
+												рекламы товаров и услуг и соответственно увеличит ее стоимость. С учетом
+												экономической
+												ситуации в стране введение этих мер максимально несвоевременно и может быть оценено
+												исключительно негативно
+											</p>
+										</em>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<aside class="page__aside aside">
+						<div class="aside__wrapper">
+							<div class="aside__partners a-partners">
+								<h3 class="a-partners__title">Новые партнёрки</h3>
+								<div class="a-partners__list">
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy" data-src="@img/betmaster.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Betmaster Partners
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy" data-src="@img/alpha.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Alpha
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy" data-src="@img/vavada.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Vavada
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy" data-src="@img/alpha.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Alpha
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+									<a href="javascript:" class="a-partners__item">
+										<div class="a-partners__item-img">
+											<img class="_lazy" data-src="@img/neogara.png" alt="partner">
+										</div>
+										<div class="a-partners__item-inner">
+											<div class="a-partners__item-type">
+												Гемблинг
+											</div>
+											<div class="a-partners__item-title">
+												Neogara
+											</div>
+										</div>
+										<div class="a-partners__item-rating">
+											<i class="far fa-star"></i>
+											<div class="a-partners__item-rating--value">
+												5.0
+											</div>
+										</div>
+									</a>
+								</div>
+								<a href="javascript:" class="a-partners__btn btn btn_arrow">
+									Смотреть все
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</a>
+							</div>
+							<div class="aside__cases a-cases">
+								<h3 class="a-cases__title">Популярные кейсы</h3>
+								<div class="a-cases__list">
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy" data-src="@img/ac1.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Погодный таргетинг: как увеличить конверсию на 235%
+										</h4>
+									</a>
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy" data-src="@img/ac2.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Погодный таргетинг: как увеличить конверсию на 235%
+										</h4>
+									</a>
+									<a href="javascript:" class="a-cases__item">
+										<div class="a-cases__item-img">
+											<img class="_lazy" data-src="@img/ac3.png" alt="Popular case">
+										</div>
+										<h4 class="a-cases__item-title">
+											Кейс +245К на похудалке в FB
+										</h4>
+									</a>
+								</div>
+								<a href="javascript:" class="a-cases__btn btn btn_arrow">
+									Смотреть все
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+				<section class="news">
+					<h2 class="news__title">Похожие новости</h2>
+					<div class="news__body">
+						<a href="javascript:" class="news__item">
+							<div class="news__item-img">
+								<img class="_lazy" data-src="@img/news1.png" alt="news">
+							</div>
+							<div class="news__item--date">
+								11/05/2021
+							</div>
+							<h4 class="news__item-title">
+								Где купить ссылки для гэмблинг проектов
+							</h4>
+							<div class="news__item-views">
+								<i class="fas fa-eye"></i>
+								<span>156</span>
+							</div>
+						</a>
+						<a href="javascript:" class="news__item">
+							<div class="news__item-img">
+								<img class="_lazy" data-src="@img/news2.png" alt="news">
+							</div>
+							<div class="news__item--date">
+								11/05/2021
+							</div>
+							<h4 class="news__item-title">
+								Виды хостинга, их назначение, достоинства и недостатки
+							</h4>
+							<div class="news__item-views">
+								<i class="fas fa-eye"></i>
+								<span>156</span>
+							</div>
+						</a>
+						<a href="javascript:" class="news__item">
+							<div class="news__item-img">
+								<img class="_lazy" data-src="@img/news3.png" alt="news">
+							</div>
+							<div class="news__item--date">
+								11/05/2021
+							</div>
+							<h4 class="news__item-title">
+								Как выбрать лучший хостинг для сайта?
+							</h4>
+							<div class="news__item-views">
+								<i class="fas fa-eye"></i>
+								<span>156</span>
+							</div>
+						</a>
+						<a href="javascript:" class="news__item">
+							<div class="news__item-img">
+								<img class="_lazy" data-src="@img/news4.png" alt="news">
+							</div>
+							<div class="news__item--date">
+								11/05/2021
+							</div>
+							<h4 class="news__item-title">
+								Лучшие сервисы для раскрутки Тик Ток
+							</h4>
+							<div class="news__item-views">
+								<i class="fas fa-eye"></i>
+								<span>156</span>
+							</div>
+						</a>
+					</div>
+					<a href="javascript:" class="news__btn btn btn_arrow">
+						Читать всё
+						<i class="fas fa-long-arrow-alt-right"></i>
+					</a>
+				</section>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

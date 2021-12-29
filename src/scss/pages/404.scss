@@ -1,0 +1,44 @@
+.page {
+
+	/* .page__404 */
+	&__404 {
+	}
+}
+
+.p404 {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 150px auto 0 auto;
+
+	/* .404__title */
+	&__title {
+		@include adaptiveValue("font-size", 314, 114);
+		font-weight: 900;
+		width: max-content;
+		position: relative;
+		align-self: center;
+	}
+
+	/* .404__descr */
+	&__descr {
+		margin-top: 50px;
+		font-size: 28px;
+	}
+
+	/* .404__btn */
+	&__btn {
+		margin-top: 36px;
+		width: 296px;
+		height: 49px;
+		font-size: 18px;
+		align-self: center;
+	}
+
+	&__img {
+		position: absolute;
+		top: -110px;
+		left: 0;
+	}
+}

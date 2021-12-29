@@ -18,10 +18,6 @@
 		"tmp": "gulp -f gulpfile.tmp.js"
 	},
 	"devDependencies": {
-		"@fortawesome/fontawesome": "^1.1.8",
-		"@fortawesome/free-brands-svg-icons": "^5.15.4",
-		"@fortawesome/free-regular-svg-icons": "^5.15.4",
-		"@fortawesome/free-solid-svg-icons": "^5.15.4",
 		"copy-webpack-plugin": "latest",
 		"css-loader": "latest",
 		"del": "latest",
@@ -32,10 +28,11 @@
 		"gulp-fonter": "latest",
 		"gulp-group-css-media-queries": "latest",
 		"gulp-if": "latest",
-		"gulp-imagemin": "7.1.0",
+		"gulp-imagemin": "latest",
 		"gulp-newer": "latest",
 		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
+		"gulp-prettier": "latest",
 		"gulp-rename": "latest",
 		"gulp-svg-sprite": "latest",
 		"gulp-ttf2woff": "latest",
@@ -47,13 +44,17 @@
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
+		"html-webpack-plugin": "latest",
 		"lightgallery": "latest",
 		"load-plugins": "latest",
 		"mini-css-extract-plugin": "latest",
 		"nouislider": "latest",
+		"pug": "latest",
+		"pug-loader": "latest",
 		"sass": "latest",
 		"sass-loader": "latest",
 		"smooth-scroll": "latest",
+		"sticky-sidebar-v2": "^1.1.1",
 		"string-replace-loader": "latest",
 		"style-loader": "latest",
 		"swiper": "latest",
@@ -69,10 +70,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^5.15.4",
 		"jquery": "^3.6.0",
-		"simplebar": "latest",
-		"sticky-sidebar": "^3.3.1",
-		"sticky-sidebar-v2": "^1.1.1"
+		"simplebar": "latest"
 	}
 }

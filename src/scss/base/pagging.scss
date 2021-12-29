@@ -1,0 +1,153 @@
+.pagging {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 33px;
+
+	&>*+* {
+		margin-top: 20px;
+	}
+
+	@media (min-width:$mobileSmall) {
+		flex-direction: row;
+
+		&>*+* {
+			margin-top: 0;
+		}
+	}
+
+	// .pagging__arrow
+	&__arrow {
+		width: auto;
+		height: 30px;
+		border-radius: 6px;
+		background-color: #eaedf1;
+		display: flex;
+		align-items: center;
+		padding-left: 16px;
+		padding-right: 13px;
+		justify-content: space-between;
+		text-transform: uppercase;
+		line-height: 20px;
+		font-size: 12px;
+		font-weight: 500;
+		overflow: hidden;
+		border: 0;
+		box-sizing: border-box;
+		position: relative;
+
+		&>*+* {
+			margin-left: 7px;
+		}
+
+		&::before,
+		&::after {
+			box-sizing: inherit;
+			content: '';
+			position: absolute;
+			transition: 0s;
+			width: 100%;
+			height: 100%;
+		}
+
+		&:before,
+		&:after {
+			// Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+			border: 2px solid transparent;
+			border-radius: 6px;
+			width: 0;
+			height: 0;
+		}
+
+		// This covers the top & right borders (expands right, then down)
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		// And this the bottom & left borders (expands left, then up)
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		&:hover {
+			color: $yellowColor;
+			background: #fff;
+		}
+
+		// Hover styles
+		&:hover::before,
+		&:hover::after {
+			width: 100%;
+			height: 100%;
+		}
+
+		&:hover::before {
+			border-top-color: $yellowColor; // Make borders visible
+			border-right-color: $yellowColor;
+			transition:
+				width 0.25s ease-out, // Width expands first
+				height 0.25s ease-out 0.25s; // And then height
+		}
+
+		&:hover::after {
+			border-bottom-color: $yellowColor; // Make borders visible
+			border-left-color: $yellowColor;
+			transition:
+				border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+				width 0.25s ease-out 0.5s, // And then exanding width
+				height 0.25s ease-out 0.75s; // And finally height
+		}
+
+		// Start ::after in same position as ::before
+		&::after {
+			top: 0;
+			left: 0;
+		}
+
+		// Change colors
+		&:hover::before {
+			border-top-color: $yellowColor;
+			border-right-color: $yellowColor;
+		}
+
+		&:hover::after {
+			border-bottom-color: $yellowColor;
+			border-left-color: $yellowColor;
+			transition: // Animate height first, then width
+				height 0.25s ease-out,
+				width 0.25s ease-out 0.25s;
+		}
+	}
+
+	// .pagging__list
+	&__list {
+		display: flex;
+		align-items: center;
+		padding: 0 50px;
+		background: transparent;
+		height: 30px;
+
+		li {
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: 500;
+			text-transform: uppercase;
+
+			&+li {
+				margin-left: 15px;
+			}
+		}
+	}
+
+	// .pagging__item
+	&__item {
+		&._active {
+			color: $yellowColor;
+		}
+		&:hover {
+			color: $yellowColor;
+		}
+	}
+}

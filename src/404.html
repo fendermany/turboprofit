@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"404"
+})
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main itemprop="mainContentOfPage" class="page _one-column">
+			<div class="page__container">
+				<div class="page__wrapper">
+					<div class="page__body">
+						<div class="page__404 p404">
+							
+							<h1 class="p404__title">
+								<img class="p404__img _lazy" data-src="@img/404.png" alt="404">
+								404
+							</h1>
+							<div class="p404__descr">Такой страницы у нас нет</div>
+							<a href="/" class="p404__btn btn btn_yellow">Вернуться на главную</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
