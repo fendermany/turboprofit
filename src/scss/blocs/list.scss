@@ -68,7 +68,7 @@
 
 				@media (min-width: em(1350)) {
 					height: 119px;
-					display: flex;
+					display: flex !important;
 					gap: 0;
 					flex-direction: row;
 
