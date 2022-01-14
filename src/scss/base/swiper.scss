@@ -34,6 +34,12 @@
 	display: none !important;
 }
 
-.swiper-slide-active{
-	z-index: 100;
+.p-slider__item{
+	visibility: hidden;
+}
+
+.p-slider__item.swiper-slide-active{
+	z-index: 999;
+	visibility: visible;
+	background: #fff;
 }
