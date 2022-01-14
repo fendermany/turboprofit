@@ -9154,7 +9154,7 @@ body.popup-show::after {
 @media (min-width: 84.375em) {
   .list._aside .list__item {
     height: 119px;
-    display: flex;
+    display: flex !important;
     gap: 0;
     flex-direction: row;
   }
